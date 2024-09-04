@@ -1,0 +1,52 @@
+<!-- detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Detail</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Library Manager</a>
+</nav>
+
+<!-- Main content -->
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h1>Book Detail</h1>
+                </div>
+                <div class="card-body">
+                    <div id="book-detail" class="mb-4">
+                        <p><strong>Title:</strong> <span id="book-title"></span></p>
+                        <p><strong>Author:</strong> <span id="book-author"></span></p>
+                        <p><strong>ISBN:</strong> <span id="book-isbn"></span></p>
+                        <p><strong>Published Date:</strong> <span id="book-publishedDate"></span></p>
+                        <p><strong>Price:</strong> <span id="book-price"></span></p>
+                        <p><strong>Description:</strong> <span id="book-description"></span></p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <a href="" id="edit-book" class="btn btn-secondary">Edit</a>
+                        <button id="delete-book" class="btn btn-danger">Delete</button>
+                        <a href="/books" class="btn btn-secondary">Back to List</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="/js/detail.js"></script>
+</body>
+</html>
