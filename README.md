@@ -85,10 +85,40 @@ View more information from a specific book:
     sudo apt update
     sudo apt install maven
 
-3. **Install MySQL:**
+3. **Install MySQL and create Database:**
     ```sh
     sudo apt update
     sudo apt install mysql-server
+    mysql -u root -p
+
+    ```sql
+    CREATE DATABASE BOOKS;
+    USE BOOKS;
+    
+    CREATE TABLE books (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    author VARCHAR(255) NOT NULL,
+    isbn VARCHAR(20) NOT NULL UNIQUE,
+    publishedDate DATE NOT NULL,
+    price DECIMAL(10, 2),
+    description VARCHAR(1000)
+
+    INSERT INTO books (title, author, isbn, publishedDate, price, description) VALUES
+   ('To Kill a Mockingbird', 'Harper Lee', '9780060935467', '1960-07-11', 10.99, 'A novel about the serious issues of rape and racial inequality.'),
+   ('1984', 'George Orwell', '9780451524935', '1949-06-08', 9.99, 'A dystopian novel set in a totalitarian society under constant surveillance.'),
+   ('Moby Dick', 'Herman Melville', '9781503280786', '1851-10-18', 11.99, 'The narrative of the obsessive quest of Ahab for revenge on Moby Dick.'),
+   ('The Great Gatsby', 'F. Scott Fitzgerald', '9780743273565', '1925-04-10', 14.99, 'A critique of the American Dream, set in the Roaring Twenties.'),
+   ('Pride and Prejudice', 'Jane Austen', '9781503290563', '1813-01-28', 12.99, 'A romantic novel that also critiques the social structures of its time.'),
+   ('The Catcher in the Rye', 'J.D. Salinger', '9780316769488', '1951-07-16', 10.49, 'A story about teenage rebellion and alienation.'),
+   ('The Hobbit', 'J.R.R. Tolkien', '9780547928227', '1937-09-21', 13.49, 'A fantasy novel about the adventures of Bilbo Baggins.'),
+   ('Fahrenheit 451', 'Ray Bradbury', '9781451673319', '1953-10-19', 11.49, 'A dystopian novel about a future where books are outlawed.'),
+   ('Brave New World', 'Aldous Huxley', '9780060850524', '1932-08-30', 12.49, 'A dystopian novel that explores a technologically advanced, but morally questionable society.'),
+   ('Jane Eyre', 'Charlotte Brontë', '9780142437209', '1847-10-16', 10.99, 'A novel about a young orphaned girl and her struggles for independence and love.');
+   );
+
+    SELECT * FROM books;
+
 
 4. **Install Tomcat:**
 
@@ -155,6 +185,13 @@ In your IDE terminal, inside the project directory, use: ```mvn tomcat7:deploy``
 to clean: ```mvn clean```  
 to undeploy ```mvn tomcat7:undeploy```  
 to redeploy ```mvn tomcat7:redeploy```
+
+OR  
+
+Run LibraryApplication in library/src/main/java/infiniitysown/library  
+Open Browser  
+GOTO localhost:8085/  
+(make sure your db is running)
 
 # 🎉 Acknowledgements
 
