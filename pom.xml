@@ -13,7 +13,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>library</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Library Manager</description>
 	<url/>
 	<licenses>
 		<license/>
