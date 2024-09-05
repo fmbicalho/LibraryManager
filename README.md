@@ -1,16 +1,12 @@
 # 📚 Library Manager
 
-![Bookstore Logo](path/to/your/logo.png)
-
-**Your Digital Partner for an Organized Library**
+![Bookstore Logo](https://github.com/fmbicalho/LibraryManager/blob/main/src/main/resources/static/images/Banner.png)
 
 ## About The Project
 
-
-
-![Screenshots](path/to/screenshot1.png)
-![Screenshots](path/to/screenshot2.png)
-![Screenshots](path/to/screenshot3.png)
+![Screenshots](https://github.com/fmbicalho/LibraryManager/blob/main/src/main/resources/static/images/Home.png)
+![Screenshots](https://github.com/fmbicalho/LibraryManager/blob/main/src/main/resources/static/images/Add-Edit.png)
+![Screenshots](https://github.com/fmbicalho/LibraryManager/blob/main/src/main/resources/static/images/Detail.png)
 
 ## Features
 
@@ -162,8 +158,7 @@ to redeploy ```mvn tomcat7:redeploy```
 
 # 🎉 Acknowledgements
 
-- **Code For All Bootcamp:** Thanks for organizing this hackathon and providing a platform to showcase our project.
-- **Team Members:** Gratitude to everyone involved for their dedication, creativity, and teamwork in developing this Library Manager application.
+- **Code For All Bootcamp:** Thanks for organizing this Technical Assignment.
 - **Technologies Used:** Appreciation to the tools and frameworks like Spring Boot, Hibernate, Thymeleaf, and Bootstrap, which were crucial in building this project.
 
 # 📈 Future Enhancements
