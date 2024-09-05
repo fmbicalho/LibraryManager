@@ -186,12 +186,19 @@ to clean: ```mvn clean```
 to undeploy ```mvn tomcat7:undeploy```  
 to redeploy ```mvn tomcat7:redeploy```
 
-OR  
+OR use IntelliJ (Or any other IDE):  
 
 Run LibraryApplication in library/src/main/java/infiniitysown/library  
 Open Browser  
 GOTO localhost:8085/  
 (make sure your db is running)
+
+OR use Docker:  
+
+```mvn clean package```  
+```docker image build -t library-manager .  ```  
+```docker container run -p 8085:8085 -d library-manager```  
+GOTO localhost:8085/
 
 # 🎉 Acknowledgements
 
