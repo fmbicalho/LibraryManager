@@ -73,7 +73,7 @@ View more information from a specific book:
 
 # 📦 Installation
 
-### For Linux
+### For MacOS or Linux (UNIX Based):
 
 1. **Install JDK 8 or 11:**
    ```sh
